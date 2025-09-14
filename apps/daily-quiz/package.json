@@ -1,5 +1,5 @@
 {
-  "name": "@daily-quiz/daily-quiz",
+  "name": "@daily-quiz/ui",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@daily-quiz/core": "*",
+    "@daily-quiz/models": "*",
     "@daily-quiz/questions": "*",
     "@daily-quiz/quizzes": "*",
     "@daily-quiz/users": "*"

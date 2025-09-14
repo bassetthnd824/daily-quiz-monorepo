@@ -1,8 +1,8 @@
 'use client';
 
-import { Question } from '@daily-quiz/questions/models';
+import { Question } from '@daily-quiz/models/questions';
 import classes from './Summary.module.scss';
-import { QuizSummary, UserAnswer } from '@daily-quiz/quizzes/models';
+import { QuizSummary, UserAnswer } from '@daily-quiz/models/quizzes';
 import { useEffect, useState } from 'react';
 import { getCurrentDate } from '@daily-quiz/core/utils';
 import { CSRF_TOKEN_NAME } from '@daily-quiz/core/constants';

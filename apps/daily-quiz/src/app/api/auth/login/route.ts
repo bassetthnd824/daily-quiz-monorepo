@@ -1,11 +1,15 @@
-import { userService } from '@daily-quiz/users/services';
+import { userService } from '@daily-quiz/users';
 import {
   CSRF_TOKEN_NAME,
   IS_PRODUCTION,
   ONE_HOUR,
   TWO_WEEKS,
 } from '@daily-quiz/core/constants';
-import { auth, firestore, SESSION_COOKIE } from '@daily-quiz/core/firebase';
+import {
+  auth,
+  firestore,
+  SESSION_COOKIE,
+} from '@daily-quiz/core/firebase/server';
 import { generateCsrfToken } from '../../../../util/csrf-tokens';
 import { cookies } from 'next/headers';
 import { NextRequest, NextResponse } from 'next/server';

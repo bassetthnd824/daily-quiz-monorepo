@@ -4,10 +4,10 @@
   "type": "module",
   "sideEffects": false,
   "devDependencies": {
-    "@daily-quiz/core": "*"
+    "@daily-quiz/core": "*",
+    "@daily-quiz/models": "*"
   },
   "exports": {
-    "./models": "./src/models/index.ts",
-    "./services": "./src/services/index.ts"
+    ".": "./src/services/index.ts"
   }
 }

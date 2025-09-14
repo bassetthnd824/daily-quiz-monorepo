@@ -1,7 +1,11 @@
-import { questionService } from '@daily-quiz/questions/services';
-import { userService } from '@daily-quiz/users/services';
-import { auth, firestore, SESSION_COOKIE } from '@daily-quiz/core/firebase';
-import { QuestionStatus, Question } from '@daily-quiz/questions/models';
+import { questionService } from '@daily-quiz/questions';
+import { userService } from '@daily-quiz/users';
+import {
+  auth,
+  firestore,
+  SESSION_COOKIE,
+} from '@daily-quiz/core/firebase/server';
+import { QuestionStatus, Question } from '@daily-quiz/models/questions';
 import { withCsrf } from '../../../util/csrf-tokens';
 import { getCurrentDate } from '@daily-quiz/core/utils';
 import { cookies } from 'next/headers';

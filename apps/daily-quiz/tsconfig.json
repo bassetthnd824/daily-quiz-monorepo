@@ -7,6 +7,20 @@
     }
   ],
   "compilerOptions": {
-    "jsx": "preserve"
-  }
+    "jsx": "preserve",
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }

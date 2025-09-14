@@ -5,14 +5,16 @@ import {
   getMonthDateRange,
   shuffleArray,
 } from '@daily-quiz/core/utils';
-import { questionDao } from '@daily-quiz/questions/services';
-import { Question } from '../../../questions/src/models/question.model';
-import { Quiz } from '../models/quiz.model';
-import { firestore } from '@daily-quiz/core/firebase';
-import { UserAnswer } from '../models/user-answer.model';
-import { QuizSummary } from '../models/quiz-summary.model';
-import { QuizUser } from '@daily-quiz/users/models';
-import { LeaderboardEntry } from '../models/leaderboard-entry.model';
+import { questionDao } from '@daily-quiz/questions';
+import { Question } from '@daily-quiz/models/questions';
+import {
+  LeaderboardEntry,
+  Quiz,
+  QuizSummary,
+  UserAnswer,
+} from '@daily-quiz/models/quizzes';
+import { firestore } from '@daily-quiz/core/firebase/server';
+import { QuizUser } from '@daily-quiz/models/users';
 import { MAX_DAILY_QUESTIONS, QUESTION_TIME } from '@daily-quiz/core/constants';
 
 export type QuizzesParams = {

@@ -2,9 +2,9 @@ import classes from './Question.module.scss';
 import QuestionTimer from '../question-timer/QuestionTimer';
 import Answers from '../answers/Answers';
 import { AnswerState } from '../quiz/Quiz';
-import { Question as QuestionModel } from '@daily-quiz/questions/models';
+import { Question as QuestionModel } from '@daily-quiz/models/questions';
 import { useRef, useState } from 'react';
-import { UserAnswer } from '@daily-quiz/quizzes/models';
+import { UserAnswer } from '@daily-quiz/models/quizzes';
 import {
   CORRECT_TIME,
   QUESTION_TIME,

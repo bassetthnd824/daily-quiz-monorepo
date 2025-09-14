@@ -1,8 +1,8 @@
 import 'server-only';
-import { firestore } from '@daily-quiz/core/firebase';
+import { firestore } from '@daily-quiz/core/firebase/server';
 import dayjs from 'dayjs';
 import { getCurrentDate } from '@daily-quiz/core/utils';
-import { Question } from '@daily-quiz/questions/models';
+import { Question } from '@daily-quiz/models/questions';
 import {
   DATE_FORMAT,
   REUSE_QUESTION_AFTER_DAYS,

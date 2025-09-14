@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { SESSION_COOKIE } from '@daily-quiz/core/firebase';
+import { SESSION_COOKIE } from '@daily-quiz/core/constants';
 
 // This function can be marked `async` if using `await` inside
 export const middleware = async (request: NextRequest) => {

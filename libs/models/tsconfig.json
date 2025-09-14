@@ -7,9 +7,6 @@
       "path": "../core"
     },
     {
-      "path": "../models"
-    },
-    {
       "path": "./tsconfig.lib.json"
     }
   ]

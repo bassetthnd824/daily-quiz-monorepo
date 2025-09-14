@@ -1,6 +1,10 @@
-import { quizService } from '@daily-quiz/quizzes/services';
-import { userService } from '@daily-quiz/users/services';
-import { auth, firestore, SESSION_COOKIE } from '@daily-quiz/core/firebase';
+import { quizService } from '@daily-quiz/quizzes';
+import { userService } from '@daily-quiz/users';
+import {
+  auth,
+  firestore,
+  SESSION_COOKIE,
+} from '@daily-quiz/core/firebase/server';
 import { withCsrf } from '../../../../util/csrf-tokens';
 import { cookies } from 'next/headers';
 import { NextRequest, NextResponse } from 'next/server';

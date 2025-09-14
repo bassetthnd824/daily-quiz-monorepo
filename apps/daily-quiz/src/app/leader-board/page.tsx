@@ -1,6 +1,6 @@
 'use client';
 
-import { LeaderboardEntry } from '@daily-quiz/quizzes/models';
+import { LeaderboardEntry } from '@daily-quiz/models/quizzes';
 import { useEffect, useState } from 'react';
 import classes from './page.module.scss';
 import UserPhoto from '../../components/ui-elements/UserPhoto/UserPhoto';

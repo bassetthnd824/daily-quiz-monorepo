@@ -1,7 +1,7 @@
 'use client';
 
 import Quiz from '../../components/quiz/quiz/Quiz';
-import { Quiz as QuizModel } from '@daily-quiz/quizzes/models';
+import { Quiz as QuizModel } from '@daily-quiz/models/quizzes';
 import { getCurrentDate } from '@daily-quiz/core/utils';
 import { useEffect, useState } from 'react';
 

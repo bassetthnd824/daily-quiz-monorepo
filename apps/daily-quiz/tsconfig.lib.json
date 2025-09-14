@@ -49,6 +49,9 @@
       "path": "../../libs/core/tsconfig.lib.json"
     },
     {
+      "path": "../../libs/models/tsconfig.lib.json"
+    },
+    {
       "path": "../../libs/questions/tsconfig.lib.json"
     },
     {

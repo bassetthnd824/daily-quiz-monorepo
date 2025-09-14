@@ -71,6 +71,7 @@
   "workspaces": [
     "apps/*",
     "libs/core/*",
+    "libs/models/*",
     "libs/questions/*",
     "libs/quizzes/*",
     "libs/users/*"

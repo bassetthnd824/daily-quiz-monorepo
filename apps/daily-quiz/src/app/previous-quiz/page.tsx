@@ -10,7 +10,7 @@ import {
   getMonthFromNdx,
   MonthYear,
 } from '@daily-quiz/core/utils';
-import { Quiz } from '@daily-quiz/quizzes/models';
+import { Quiz } from '@daily-quiz/models/quizzes';
 import { useAuth } from '../../context/user-context';
 
 const PreviousQuiz = () => {

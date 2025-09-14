@@ -1,4 +1,4 @@
-import { Question } from '../../../questions/src/models/question.model';
+import { Question } from '../questions/question.model';
 import { QuizSummary } from './quiz-summary.model';
 
 export type Quiz = {

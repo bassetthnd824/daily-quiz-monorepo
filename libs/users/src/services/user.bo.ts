@@ -1,7 +1,7 @@
 import 'server-only';
 import { userDao } from './user.dao';
-import { auth, firestore } from '@daily-quiz/core/firebase';
-import { QuizUser, UserProfile } from '../models/user-profile.model';
+import { auth, firestore } from '@daily-quiz/core/firebase/server';
+import { QuizUser, UserProfile } from '@daily-quiz/models/users';
 import { UserRecord } from 'firebase-admin/auth';
 
 const getUserProfile = async (

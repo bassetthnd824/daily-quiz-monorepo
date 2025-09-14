@@ -4,7 +4,7 @@ import { useCallback, useState } from 'react';
 import classes from './Quiz.module.scss';
 import QuestionComponent from '../question/Question';
 import Summary from '../summary/Summary';
-import { Quiz as QuizModel, UserAnswer } from '@daily-quiz/quizzes/models';
+import { Quiz as QuizModel, UserAnswer } from '@daily-quiz/models/quizzes';
 import { useAuth } from '../../../context/user-context';
 import NoQuiz from '../no-quiz/NoQuiz';
 

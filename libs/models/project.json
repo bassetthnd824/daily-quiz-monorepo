@@ -1,0 +1,17 @@
+{
+  "name": "models",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/models/src",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:api"],
+  "targets": {
+    "lint": {},
+    "test": {},
+    "type-check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --build libs/models/tsconfig.lib.json --emitDeclarationOnly"
+      }
+    }
+  }
+}

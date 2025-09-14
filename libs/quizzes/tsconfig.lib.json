@@ -8,6 +8,9 @@
   "references": [
     {
       "path": "../core/tsconfig.lib.json"
+    },
+    {
+      "path": "../models/tsconfig.lib.json"
     }
   ]
 }
