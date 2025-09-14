@@ -1,4 +1,4 @@
-import classes from '@/components/quiz/question/Question.module.scss';
+import classes from './Question.module.scss';
 import QuestionTimer from '../question-timer/QuestionTimer';
 import Answers from '../answers/Answers';
 import { AnswerState } from '../quiz/Quiz';

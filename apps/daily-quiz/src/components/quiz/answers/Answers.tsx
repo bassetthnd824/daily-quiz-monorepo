@@ -1,4 +1,4 @@
-import classes from '@/components/quiz/answers/Answers.module.scss';
+import classes from './Answers.module.scss';
 import { AnswerState } from '../quiz/Quiz';
 import { shuffleArray } from '@daily-quiz/core/utils';
 import { useRef } from 'react';
