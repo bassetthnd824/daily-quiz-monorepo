@@ -1,10 +1,25 @@
 {
   "extends": "./tsconfig.base.json",
-  "compileOnSave": false,
-  "files": [],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
   "references": [
     {
-      "path": "./apps/daily-quiz-monorepo"
+      "path": "./libs/core"
+    },
+    {
+      "path": "./libs/questions"
+    },
+    {
+      "path": "./libs/quizzes"
+    },
+    {
+      "path": "./libs/users"
+    },
+    {
+      "path": "./apps/daily-quiz"
     }
   ]
 }

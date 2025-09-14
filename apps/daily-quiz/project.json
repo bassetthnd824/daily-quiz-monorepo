@@ -1,0 +1,44 @@
+{
+  "name": "daily-quiz",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/daily-quiz/src",
+  "projectType": "application",
+  "tags": ["scope:app", "type:ui"],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/daily-quiz",
+        "outputPath": "dist/apps/daily-quiz"
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "daily-quiz:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "daily-quiz:build:development",
+          "dev": true,
+          "port": 3000
+        },
+        "production": {
+          "buildTarget": "daily-quiz:build:production",
+          "dev": false
+        }
+      }
+    },
+    "lint": {},
+    "type-check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --build apps/daily-quiz/tsconfig.app.json --emitDeclarationOnly"
+      }
+    }
+  }
+}

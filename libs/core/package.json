@@ -1,0 +1,11 @@
+{
+  "name": "@daily-quiz/core",
+  "version": "1.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./constants": "./src/constants/index.ts",
+    "./firebase": "./src/firebase/index.ts",
+    "./utils": "./src/util/index.ts"
+  }
+}

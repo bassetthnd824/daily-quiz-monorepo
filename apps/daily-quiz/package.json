@@ -1,0 +1,16 @@
+{
+  "name": "@daily-quiz/daily-quiz",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "next": "^15.5.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@daily-quiz/core": "*",
+    "@daily-quiz/questions": "*",
+    "@daily-quiz/quizzes": "*",
+    "@daily-quiz/users": "*"
+  }
+}

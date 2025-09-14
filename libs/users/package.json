@@ -1,0 +1,13 @@
+{
+  "name": "@daily-quiz/users",
+  "version": "1.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "devDependencies": {
+    "@daily-quiz/core": "*"
+  },
+  "exports": {
+    "./models": "./src/models/index.ts",
+    "./services": "./src/services/index.ts"
+  }
+}

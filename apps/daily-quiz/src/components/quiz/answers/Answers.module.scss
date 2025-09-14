@@ -1,0 +1,30 @@
+.answers {
+  list-style-type: none;
+}
+
+.answer {
+  & + .answer {
+    margin-top: 1.5rem;
+  }
+
+  & button {
+    font-size: 1.25rem;
+    width: 100%;
+    border-radius: 1.5rem;
+
+    &.answered,
+    &.answered:hover {
+      background-color: var(--warning);
+    }
+
+    &.correct,
+    &.correct:hover {
+      background-color: var(--success);
+    }
+
+    &.wrong,
+    &.wrong:hover {
+      background-color: var(--danger);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "core",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/core/src",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:core"],
+  "targets": {
+    "lint": {},
+    "test": {},
+    "type-check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --build libs/core/tsconfig.lib.json --emitDeclarationOnly"
+      }
+    }
+  }
+}

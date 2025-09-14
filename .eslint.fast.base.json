@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "unused-imports/no-unused-vars-ts": "off",
+    "unused-imports/no-unused-imports-ts": "off",
+    "@typescript-eslint/no-unsafed-assignment": "off",
+    "@typescript-eslint/no-redeclare": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "import/order": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "@typescript-eslint/naming-convention": "off"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "**/*",
+    ".nx",
+    "node_modules",
+    "*.yaml",
+    "dist",
+    ".github",
+    ".deploy",
+    ".vscode"
+  ],
+  "plugins": ["@nx", "formatjs", "react-hooks"],
+  "rules": {
+    "import/order": [
+      1,
+      {
+        "newlines-between": "always",
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@daily-quiz/**",
+            "group": "internal",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "extends": ["../../.eslintrc.json", "../../.eslintrc.base.json"],
+  "ignorePatterns": [
+    "!**/*",
+    "out-tsc",
+    "node_modules",
+    "dist",
+    "tmp",
+    "coverage",
+    "out"
+  ],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.d.ts"],
+      "parserOptions": {
+        "project": ["libs/users/tsconfig.lib.json"]
+      },
+      "settings": {
+        "import/resolver": {
+          "typescript": {
+            "project": ["libs/users/tsconfig.lib.json"]
+          }
+        }
+      }
+    },
+    {
+      "files": ["*.json"],
+      "parser": "jsonc-eslint-parser",
+      "extends": ["../../.eslintrc.disable-typescript.json"],
+      "rules": {}
+    }
+  ]
+}
