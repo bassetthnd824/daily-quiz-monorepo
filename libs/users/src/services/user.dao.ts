@@ -1,5 +1,5 @@
 import 'server-only';
-import { firestore } from '@daily-quiz/core/firebase/server';
+import { firestore } from '@daily-quiz/core/firebase-server';
 import { UserProfile } from '@daily-quiz/models/users';
 
 const USERS = 'users';

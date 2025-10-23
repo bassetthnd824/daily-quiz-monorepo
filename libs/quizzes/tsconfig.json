@@ -10,6 +10,9 @@
       "path": "../models"
     },
     {
+      "path": "../questions"
+    },
+    {
       "path": "./tsconfig.lib.json"
     }
   ]

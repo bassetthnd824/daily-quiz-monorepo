@@ -5,7 +5,8 @@
   "sideEffects": false,
   "devDependencies": {
     "@daily-quiz/core": "*",
-    "@daily-quiz/models": "*"
+    "@daily-quiz/models": "*",
+    "@daily-quiz/questions": "*"
   },
   "exports": {
     ".": "./src/services/index.ts"

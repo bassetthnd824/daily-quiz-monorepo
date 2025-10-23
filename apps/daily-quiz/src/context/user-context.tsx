@@ -1,7 +1,7 @@
 'use client';
 
 import { CSRF_TOKEN_NAME } from '@daily-quiz/core/constants';
-import { clientAuth } from '@daily-quiz/core/firebase/client';
+import { clientAuth } from '@daily-quiz/core/firebase-client';
 import { QuizUser, UserProfile } from '@daily-quiz/models/users';
 import { getCookie } from '../util/csrf-tokens';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';

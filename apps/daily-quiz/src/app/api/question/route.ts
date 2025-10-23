@@ -1,15 +1,15 @@
-import { questionService } from '@daily-quiz/questions';
 import { userService } from '@daily-quiz/users';
 import {
   auth,
   firestore,
   SESSION_COOKIE,
-} from '@daily-quiz/core/firebase/server';
+} from '@daily-quiz/core/firebase-server';
 import { QuestionStatus, Question } from '@daily-quiz/models/questions';
 import { withCsrf } from '../../../util/csrf-tokens';
 import { getCurrentDate } from '@daily-quiz/core/utils';
 import { cookies } from 'next/headers';
 import { NextRequest, NextResponse } from 'next/server';
+import { questionService } from '@daily-quiz/questions';
 
 const POST_handler = async (request: NextRequest) => {
   try {

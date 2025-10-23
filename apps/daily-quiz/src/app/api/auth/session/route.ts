@@ -4,7 +4,7 @@ import {
   IS_PRODUCTION,
   ONE_HOUR,
 } from '@daily-quiz/core/constants';
-import { auth, SESSION_COOKIE } from '@daily-quiz/core/firebase/server';
+import { auth, SESSION_COOKIE } from '@daily-quiz/core/firebase-server';
 import { QuizUser } from '@daily-quiz/models/users';
 import { generateCsrfToken } from '../../../../util/csrf-tokens';
 import { DecodedIdToken } from 'firebase-admin/auth';

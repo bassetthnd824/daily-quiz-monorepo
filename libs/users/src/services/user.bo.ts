@@ -1,6 +1,6 @@
 import 'server-only';
 import { userDao } from './user.dao';
-import { auth, firestore } from '@daily-quiz/core/firebase/server';
+import { auth, firestore } from '@daily-quiz/core/firebase-server';
 import { QuizUser, UserProfile } from '@daily-quiz/models/users';
 import { UserRecord } from 'firebase-admin/auth';
 

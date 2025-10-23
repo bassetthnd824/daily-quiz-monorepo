@@ -1,0 +1,49 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": [],
+    "lib": ["dom", "dom.iterable", "esnext", "ESNext.Array"],
+    "jsx": "preserve",
+    "noEmit": true,
+    "baseUrl": "./",
+    "paths": {
+      "@daily-quiz/*": ["./src/*"]
+    }
+  },
+  "files": [],
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/server.js",
+    "src/init.js",
+    "next.config.ts",
+    "svgr.d.ts"
+  ],
+  "exclude": [
+    "out-tsc",
+    "dist",
+    "node_modules",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    ".next"
+  ],
+  "references": [
+    {
+      "path": "../../libs/core/tsconfig.lib.json"
+    },
+    {
+      "path": "../../libs/models/tsconfig.lib.json"
+    },
+    {
+      "path": "../../libs/questions/tsconfig.lib.json"
+    },
+    {
+      "path": "../../libs/quizzes/tsconfig.lib.json"
+    },
+    {
+      "path": "../../libs/users/tsconfig.lib.json"
+    }
+  ]
+}

@@ -11,6 +11,9 @@
     },
     {
       "path": "../models/tsconfig.lib.json"
+    },
+    {
+      "path": "../questions/tsconfig.lib.json"
     }
   ]
 }

@@ -1,6 +1,6 @@
 import { quizService } from '@daily-quiz/quizzes';
-import { firestore, SESSION_COOKIE } from '@daily-quiz/core/firebase/server';
 import { cookies } from 'next/headers';
+import { firestore, SESSION_COOKIE } from '@daily-quiz/core/firebase-server';
 import { NextRequest, NextResponse } from 'next/server';
 
 export const GET = async (request: NextRequest) => {

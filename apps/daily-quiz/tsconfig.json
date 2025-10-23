@@ -1,26 +1,39 @@
 {
   "extends": "../../tsconfig.base.json",
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.lib.json"
-    }
-  ],
   "compilerOptions": {
-    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@daily-quiz/*": ["./src/*"]
+    },
     "allowJs": true,
-    "noEmit": true,
+    "emitDeclarationOnly": true,
     "incremental": true,
+    "jsx": "preserve",
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "noEmit": true
   },
-  "include": [
-    "next-env.d.ts",
-    ".next/types/**/*.ts",
-    "**/*.ts",
-    "**/*.tsx"
+  "files": [],
+  "include": [".next/types/**/*.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [],
+  "references": [
+    {
+      "path": "../../libs/core"
+    },
+    {
+      "path": "../../libs/models"
+    },
+    {
+      "path": "../../libs/questions"
+    },
+    {
+      "path": "../../libs/quizzes"
+    },
+    {
+      "path": "../../libs/users"
+    }
   ]
 }

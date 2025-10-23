@@ -5,8 +5,8 @@
   "sideEffects": false,
   "exports": {
     "./constants": "./src/constants/index.ts",
-    "./firebase/client": "./src/firebase/client.ts",
-    "./firebase/server": "./src/firebase/server.ts",
+    "./firebase-client": "./src/firebase-client/client.ts",
+    "./firebase-server": "./src/firebase-server/server.ts",
     "./utils": "./src/util/index.ts"
   }
 }

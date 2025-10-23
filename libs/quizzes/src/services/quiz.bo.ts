@@ -13,7 +13,7 @@ import {
   QuizSummary,
   UserAnswer,
 } from '@daily-quiz/models/quizzes';
-import { firestore } from '@daily-quiz/core/firebase/server';
+import { firestore } from '@daily-quiz/core/firebase-server';
 import { QuizUser } from '@daily-quiz/models/users';
 import { MAX_DAILY_QUESTIONS, QUESTION_TIME } from '@daily-quiz/core/constants';
 

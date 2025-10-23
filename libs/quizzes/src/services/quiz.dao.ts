@@ -1,6 +1,6 @@
 import 'server-only';
 import { QuizzesParams } from './quiz.bo';
-import { firestore } from '@daily-quiz/core/firebase/server';
+import { firestore } from '@daily-quiz/core/firebase-server';
 import { Quiz, QuizSummary } from '@daily-quiz/models/quizzes';
 
 const QUIZZES = 'quizzes';

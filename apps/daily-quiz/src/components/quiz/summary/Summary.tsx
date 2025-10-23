@@ -6,7 +6,7 @@ import { QuizSummary, UserAnswer } from '@daily-quiz/models/quizzes';
 import { useEffect, useState } from 'react';
 import { getCurrentDate } from '@daily-quiz/core/utils';
 import { CSRF_TOKEN_NAME } from '@daily-quiz/core/constants';
-import { getCookie } from '../../../util/csrf-tokens';
+import { getCookie } from '@daily-quiz/util/csrf-tokens';
 
 export type SummaryProps = {
   userAnswers: UserAnswer[];
